@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c68nudaw3re28"]
 
 [ext_resource type="Script" path="res://Manager/game_manager.gd" id="1_6d77k"]
-[ext_resource type="PackedScene" uid="uid://bnskerqqhsbyh" path="res://turn_component.tscn" id="2_fbp2n"]
-[ext_resource type="PackedScene" uid="uid://d0uey4xwb670t" path="res://victory_component.tscn" id="3_sxk2c"]
+[ext_resource type="PackedScene" uid="uid://bnskerqqhsbyh" path="res://Component/turn_component.tscn" id="2_fbp2n"]
+[ext_resource type="PackedScene" uid="uid://jlhx7tojrkug" path="res://Component/victory_component.tscn" id="3_sxk2c"]
 [ext_resource type="Script" path="res://Component/DrawComponent.gd" id="4_cgba5"]
 
 [node name="GameManager" type="Node2D"]

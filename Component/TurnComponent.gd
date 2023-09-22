@@ -7,6 +7,8 @@ func _ready():
 	Constant.box_clicked.connect(turn_change)
 	
 func turn_change(slot, index):
+	if Constant.is_game_finished :
+		return
 	if get_parent().get_dictionary().has(index):
 		return
 	var new_turn = (turn + 1) % Constant.Player.size()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dtc4wlax17orm"]
+[gd_scene load_steps=4 format=3 uid="uid://dtc4wlax17orm"]
 
-[ext_resource type="PackedScene" uid="uid://c68nudaw3re28" path="res://game_manager.tscn" id="1_jnede"]
-[ext_resource type="PackedScene" uid="uid://cf5umhkhia4ut" path="res://board_manager.tscn" id="2_oeklp"]
+[ext_resource type="PackedScene" uid="uid://c68nudaw3re28" path="res://Manager/game_manager.tscn" id="1_jnede"]
+[ext_resource type="PackedScene" uid="uid://cf5umhkhia4ut" path="res://Manager/board_manager.tscn" id="2_oeklp"]
+[ext_resource type="Script" path="res://Manager/UIManager.gd" id="3_v20t5"]
 
 [node name="GameScene" type="Node2D"]
 
@@ -14,3 +15,7 @@ zoom = Vector2(1.5, 1.5)
 
 [node name="BoardManager" parent="." instance=ExtResource("2_oeklp")]
 position = Vector2(180, 320)
+
+[node name="UIManager" type="Node2D" parent="."]
+position = Vector2(247, 751)
+script = ExtResource("3_v20t5")
