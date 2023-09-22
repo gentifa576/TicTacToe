@@ -1,8 +1,8 @@
 extends Node2D
 
-@export var x_img = preload("res://X.png")
-@export var o_img = preload("res://O.png")
-@export var symbol_scene = preload("res://symbol.tscn")
+@export var x_img = preload("res://Image/X.png")
+@export var o_img = preload("res://Image/O.png")
+@export var symbol_scene = preload("res://Component/symbol.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

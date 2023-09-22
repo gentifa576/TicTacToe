@@ -1,7 +1,7 @@
 extends Node2D
 
-@export var lineSprite = preload("res://line_sprite.tscn")
-@export var slot = preload("res://slot.tscn")
+@export var lineSprite = preload("res://Component/line_sprite.tscn")
+@export var slot = preload("res://Component/slot.tscn")
 
 var width = 8
 var height = 64

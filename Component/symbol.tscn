@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cfryv45dvb82x"]
 
-[ext_resource type="Script" path="res://symbol.gd" id="1_m7eae"]
-[ext_resource type="AudioStream" uid="uid://de2ofof27rcyx" path="res://water_droplet_6-165636.mp3" id="2_l2trd"]
+[ext_resource type="Script" path="res://Component/symbol.gd" id="1_scjuu"]
+[ext_resource type="AudioStream" uid="uid://de2ofof27rcyx" path="res://Audio/water_droplet_6-165636.mp3" id="2_unq7b"]
 
 [sub_resource type="Animation" id="Animation_ic7hu"]
 resource_name = "placed"
@@ -40,7 +40,7 @@ _data = {
 }
 
 [node name="Symbol" type="Sprite2D"]
-script = ExtResource("1_m7eae")
+script = ExtResource("1_scjuu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -48,4 +48,4 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_l2trd")
+stream = ExtResource("2_unq7b")
