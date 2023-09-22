@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtc4wlax17orm"]
+
+[ext_resource type="PackedScene" uid="uid://c68nudaw3re28" path="res://game_manager.tscn" id="1_jnede"]
+[ext_resource type="PackedScene" uid="uid://cf5umhkhia4ut" path="res://board_manager.tscn" id="2_oeklp"]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(100, 170)
+anchor_mode = 0
+zoom = Vector2(1.5, 1.5)
+
+[node name="GameManager" parent="." instance=ExtResource("1_jnede")]
+
+[node name="BoardManager" parent="." instance=ExtResource("2_oeklp")]
+position = Vector2(180, 320)

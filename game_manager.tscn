@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://c68nudaw3re28"]
+
+[ext_resource type="Script" path="res://game_manager.gd" id="1_68rgg"]
+[ext_resource type="PackedScene" uid="uid://bnskerqqhsbyh" path="res://turn_component.tscn" id="1_xv6w8"]
+[ext_resource type="PackedScene" uid="uid://d0uey4xwb670t" path="res://victory_component.tscn" id="2_r5r6s"]
+[ext_resource type="Script" path="res://DrawComponent.gd" id="4_nu27y"]
+
+[node name="GameManager" type="Node2D"]
+script = ExtResource("1_68rgg")
+
+[node name="TurnComponent" parent="." instance=ExtResource("1_xv6w8")]
+
+[node name="VictoryComponent" parent="." instance=ExtResource("2_r5r6s")]
+
+[node name="DrawComponent" type="Node2D" parent="."]
+script = ExtResource("4_nu27y")
